@@ -1,0 +1,29 @@
+name: Retour d'implémentation
+description: Vous avez passé un export réel dans le validateur et quelque chose a échoué
+labels: ["retour terrain"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        C'est la contribution la plus utile que vous puissiez apporter. Elle
+        confronte le cadre à des données réelles plutôt qu'à des exemples
+        fabriqués.
+  - type: input
+    id: origine
+    attributes:
+      label: Origine des données
+      description: Type d'outil, type de structure. Pas besoin de nommer si vous préférez
+    validations:
+      required: true
+  - type: textarea
+    id: message
+    attributes:
+      label: Le message d'erreur obtenu
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Ce que vous pensiez produire de correct
+    validations:
+      required: false

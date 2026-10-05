@@ -1,0 +1,99 @@
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix cidsv:  <https://example.org/cidsv/v0.1/shapes#> .
+
+#
+# Représentation
+#
+cidsv:RepresentationShape
+    a sh:NodeShape ;
+    sh:targetClass schema:PerformingArtsEvent ;
+    sh:nodeKind sh:IRI ;
+    sh:message "Une représentation doit porter un identifiant pérenne."@fr ;
+
+    sh:property [
+        sh:path schema:name ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:message "Le nom de la représentation est obligatoire."@fr ;
+    ] ;
+
+    sh:property [
+        sh:path schema:startDate ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:message "La date et l'heure de début sont obligatoires."@fr ;
+    ] ;
+
+    sh:property [
+        sh:path schema:endDate ;
+        sh:maxCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path schema:location ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:nodeKind sh:BlankNodeOrIRI ;
+        sh:message "Le lieu physique est obligatoire pour une représentation."@fr ;
+    ] ;
+
+    sh:property [
+        sh:path schema:eventStatus ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( schema:EventScheduled
+                schema:EventCancelled
+                schema:EventPostponed
+                schema:EventRescheduled
+                schema:EventMovedOnline ) ;
+        sh:message "Le statut de l'événement est obligatoire, sans quoi une annulation ne se propage pas aux réutilisateurs."@fr ;
+    ] ;
+
+    sh:property [
+        sh:path schema:inLanguage ;
+        sh:maxCount 1 ;
+    ] .
+
+#
+# Série
+#
+cidsv:SerieShape
+    a sh:NodeShape ;
+    sh:targetClass schema:EventSeries ;
+    sh:nodeKind sh:IRI ;
+    sh:message "Une série doit porter un identifiant pérenne."@fr ;
+
+    sh:property [
+        sh:path schema:name ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:message "Le nom de la série est obligatoire."@fr ;
+    ] ;
+
+    sh:property [
+        sh:path schema:startDate ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:message "La date de début de la série est obligatoire."@fr ;
+    ] ;
+
+    sh:property [
+        sh:path schema:location ;
+        sh:maxCount 1 ;
+        sh:message "Une série itinérante n'a pas de lieu unique. La propriété est facultative et ne peut pas être répétée."@fr ;
+    ] ;
+
+    sh:property [
+        sh:path schema:eventStatus ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:message "Le statut de la série est obligatoire."@fr ;
+    ] .
+
+#
+# Lieu
+#
+cidsv:LieuShape
+    a sh:NodeShape ;
+    sh:targetClass schema:Place ;
+
+    sh:property [
+        sh:path schema:name ;
+        sh:minCount 1 ;
+        sh:message "Le nom du lieu est obligatoire."@fr ;
+    ] .

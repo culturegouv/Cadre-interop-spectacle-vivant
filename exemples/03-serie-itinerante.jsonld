@@ -1,0 +1,58 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EventSeries",
+  "@id": "https://exemple.fr/serie/la-lettre-2027",
+  "name": "La Lettre, série de représentations 2027",
+  "description": "Série itinérante, sans lieu unique. Cet exemple illustre pourquoi la propriété location ne peut pas être obligatoire sur une série.",
+  "startDate": "2027-05-20",
+  "endDate": "2027-05-30",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "organizer": {
+    "@type": "Organization",
+    "@id": "https://exemple.fr/org/tpm",
+    "name": "Théâtre Public de Montreuil"
+  },
+  "workPerformed": {
+    "@type": "CreativeWork",
+    "@id": "https://exemple.fr/oeuvre/la-lettre",
+    "name": "La Lettre"
+  },
+  "subEvent": [
+    {
+      "@type": "PerformingArtsEvent",
+      "@id": "https://exemple.fr/event/la-lettre-2027-05-20",
+      "name": "La Lettre",
+      "startDate": "2027-05-20T20:00:00+02:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "@id": "https://exemple.fr/lieu/parc-montreau",
+        "name": "Parc Montreau",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2 rue Babeuf",
+          "addressLocality": "Montreuil",
+          "addressCountry": "FR"
+        }
+      }
+    },
+    {
+      "@type": "PerformingArtsEvent",
+      "@id": "https://exemple.fr/event/la-lettre-2027-05-26",
+      "name": "La Lettre",
+      "startDate": "2027-05-26T20:00:00+02:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "@id": "https://exemple.fr/lieu/theatre-des-roches",
+        "name": "Théâtre des Roches",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "19 rue Antoinette",
+          "addressLocality": "Montreuil",
+          "addressCountry": "FR"
+        }
+      }
+    }
+  ]
+}

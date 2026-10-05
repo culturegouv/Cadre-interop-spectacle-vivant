@@ -1,0 +1,32 @@
+name: Validation du cadre
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  valider:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install -r outils/requirements.txt
+
+      - name: Vérifier la syntaxe JSON de tous les exemples
+        run: |
+          for f in exemples/*.jsonld exemples/invalides/*.jsonld; do
+            echo "Vérification de $f"
+            python3 -m json.tool "$f" > /dev/null
+          done
+
+      - name: Les exemples valides doivent passer
+        run: python3 outils/valider.py exemples/*.jsonld
+
+      - name: Les exemples invalides doivent échouer
+        run: python3 outils/valider.py --attendu-invalide exemples/invalides/*.jsonld

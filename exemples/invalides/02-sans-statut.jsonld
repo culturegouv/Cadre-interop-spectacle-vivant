@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PerformingArtsEvent",
+  "@id": "https://exemple.fr/event/sans-statut",
+  "name": "Représentation sans statut",
+  "startDate": "2027-03-15T20:00:00+01:00",
+  "location": {
+    "@type": "Place",
+    "@id": "https://exemple.fr/lieu/test",
+    "name": "Lieu de test"
+  }
+}

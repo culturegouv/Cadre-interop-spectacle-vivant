@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/cidsv/v0.1/cidsv.schema.json",
+  "title": "Cadre d'interopérabilité des données du spectacle vivant, version 0.1",
+  "description": "Validation syntaxique d'un document JSON-LD conforme au cadre. La validation du graphe relève des règles SHACL, qui sont la référence.",
+  "type": "object",
+  "required": ["@context", "@type", "@id", "name"],
+  "properties": {
+    "@context": { "type": ["string", "object"] },
+    "@type": {
+      "type": "string",
+      "enum": ["PerformingArtsEvent", "Event", "EventSeries"]
+    },
+    "@id": { "type": "string", "format": "uri" },
+    "name": { "type": "string", "minLength": 1 },
+    "startDate": { "type": "string" },
+    "endDate": { "type": "string" },
+    "duration": { "type": "string" },
+    "eventStatus": { "type": "string", "format": "uri" },
+    "eventAttendanceMode": { "type": "string", "format": "uri" },
+    "inLanguage": { "type": "string" },
+    "url": { "type": "string", "format": "uri" },
+    "description": { "type": "string" },
+    "location": { "type": ["object", "array"] },
+    "organizer": { "type": ["object", "array"] },
+    "workPerformed": { "type": ["object", "array"] },
+    "performer": { "type": ["object", "array"] },
+    "offers": { "type": ["object", "array"] },
+    "subEvent": { "type": ["object", "array"] },
+    "superEvent": { "type": ["object", "array"] }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "@type": { "const": "PerformingArtsEvent" } } },
+      "then": { "required": ["startDate", "location", "eventStatus"] }
+    },
+    {
+      "if": { "properties": { "@type": { "const": "EventSeries" } } },
+      "then": { "required": ["startDate", "eventStatus"] }
+    }
+  ]
+}

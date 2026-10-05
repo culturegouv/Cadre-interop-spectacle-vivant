@@ -1,0 +1,36 @@
+name: Proposition d'évolution du modèle
+description: Proposer l'ajout ou la modification d'une propriété, d'une classe ou d'une cardinalité
+labels: ["évolution", "à instruire"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Une évolution du modèle se discute avant de s'écrire. Merci d'ouvrir
+        cette proposition avant toute modification du code.
+  - type: textarea
+    id: besoin
+    attributes:
+      label: Besoin métier
+      description: Quel problème concret cette évolution résout-elle, et pour qui
+    validations:
+      required: true
+  - type: textarea
+    id: cas-usage
+    attributes:
+      label: Cas d'usage
+      description: Un exemple réel et situé. Une proposition sans cas d'usage ne peut pas être instruite
+    validations:
+      required: true
+  - type: input
+    id: propriete
+    attributes:
+      label: Propriété ou classe schema.org visée
+    validations:
+      required: true
+  - type: textarea
+    id: incidence
+    attributes:
+      label: Incidence sur les implémentations existantes
+      description: Un flux conforme aujourd'hui cesserait-il de l'être
+    validations:
+      required: true

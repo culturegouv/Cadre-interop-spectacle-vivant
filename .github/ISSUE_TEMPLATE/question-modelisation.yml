@@ -1,0 +1,17 @@
+name: Question de modélisation
+description: Un cas que le cadre ne couvre pas clairement
+labels: ["question", "cycle suivant"]
+body:
+  - type: textarea
+    id: situation
+    attributes:
+      label: La situation
+      description: Décrivez le cas concret que vous cherchez à représenter
+    validations:
+      required: true
+  - type: textarea
+    id: tentative
+    attributes:
+      label: Ce que vous avez essayé
+    validations:
+      required: false

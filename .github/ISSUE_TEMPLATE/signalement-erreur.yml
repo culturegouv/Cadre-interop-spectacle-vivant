@@ -1,0 +1,23 @@
+name: Signalement d'erreur
+description: Signaler une incohérence, un exemple invalide ou une propriété mal référencée
+labels: ["erreur"]
+body:
+  - type: input
+    id: emplacement
+    attributes:
+      label: Où
+      description: Fichier et section concernés
+    validations:
+      required: true
+  - type: textarea
+    id: constat
+    attributes:
+      label: Ce que dit le cadre aujourd'hui
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Ce qui devrait être écrit
+    validations:
+      required: true

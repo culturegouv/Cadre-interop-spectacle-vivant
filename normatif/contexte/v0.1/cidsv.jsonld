@@ -1,0 +1,20 @@
+{
+  "_commentaire": "Contexte JSON-LD du cadre d'interopérabilité des données du spectacle vivant. Adresse figée, ne doit jamais être modifiée. Une correction donne lieu à une nouvelle version corrective.",
+  "_version": "0.1",
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "schema": "https://schema.org/",
+
+    "eventStatus": { "@type": "@id" },
+    "eventAttendanceMode": { "@type": "@id" },
+    "availability": { "@type": "@id" },
+    "url": { "@type": "@id" },
+    "sameAs": { "@type": "@id" },
+    "image": { "@type": "@id" },
+    "additionalType": { "@type": "@id" },
+
+    "startDate": { "@type": "http://www.w3.org/2001/XMLSchema#dateTime" },
+    "endDate": { "@type": "http://www.w3.org/2001/XMLSchema#dateTime" },
+    "duration": { "@type": "http://www.w3.org/2001/XMLSchema#duration" }
+  }
+}

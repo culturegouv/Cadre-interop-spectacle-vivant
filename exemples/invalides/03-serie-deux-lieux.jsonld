@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EventSeries",
+  "@id": "https://exemple.fr/serie/deux-lieux",
+  "name": "Série avec deux lieux déclarés",
+  "startDate": "2027-04-01",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": [
+    { "@type": "Place", "@id": "https://exemple.fr/lieu/a", "name": "Lieu A" },
+    { "@type": "Place", "@id": "https://exemple.fr/lieu/b", "name": "Lieu B" }
+  ]
+}

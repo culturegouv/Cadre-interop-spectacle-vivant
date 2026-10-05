@@ -1,0 +1,11 @@
+# Relecteurs requis avant fusion.
+# Remplacer les identifiants ci-dessous par les comptes réels.
+
+# Toute modification du normatif requiert une relecture
+/normatif/        @a-definir-ministere @a-definir-tmnlab
+
+# Les règles de validation requièrent une relecture technique
+/normatif/formes/ @a-definir-technique
+
+# La documentation
+/docs/            @a-definir-tmnlab

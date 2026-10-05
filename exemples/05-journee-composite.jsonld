@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EventSeries",
+  "@id": "https://exemple.fr/serie/journee-decouverte-2027",
+  "name": "Journée découverte, Parier sur la beauté",
+  "description": "Journée composée d'événements de natures différentes, répétition publique, rencontre et conférence.",
+  "startDate": "2027-02-28",
+  "endDate": "2027-02-28",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "@id": "https://exemple.fr/lieu/opera-exemple",
+    "name": "Opéra, exemple",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lyon",
+      "addressCountry": "FR"
+    }
+  },
+  "subEvent": [
+    {
+      "@type": "PerformingArtsEvent",
+      "@id": "https://exemple.fr/event/repetition-publique-2027-02-28",
+      "name": "Répétition publique, Manon Lescaut",
+      "startDate": "2027-02-28T09:30:00+01:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "@id": "https://exemple.fr/lieu/opera-exemple",
+        "name": "Opéra, exemple"
+      }
+    },
+    {
+      "@type": "PerformingArtsEvent",
+      "@id": "https://exemple.fr/event/rencontre-2027-02-28",
+      "name": "Rencontre, Parier sur la beauté",
+      "startDate": "2027-02-28T11:00:00+01:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "@id": "https://exemple.fr/lieu/opera-exemple",
+        "name": "Opéra, exemple"
+      }
+    }
+  ]
+}
