@@ -26,7 +26,7 @@ Voir le [journal des modifications](CHANGELOG.md) et la
 
 ## Organisation du dépôt
 
-Le dépôt distingue ce qui engage de ce qui explique.
+Le dépôt distingue deux modalités de présentations.
 
 | Dossier | Statut | Contenu |
 | --- | --- | --- |
