@@ -6,6 +6,8 @@
   "startDate": "2027-05-20",
   "endDate": "2027-05-30",
   "eventStatus": "https://schema.org/EventScheduled",
+  "additionalType": "https://exemple.fr/referentiel/esthetiques/theatre-musical",
+  "genre": "Théâtre musical",
   "location": {
     "@type": "Place",
     "@id": "https://exemple.fr/lieu/salle-renaud-barrault",
@@ -29,10 +31,17 @@
       "startDate": "2027-05-20T20:00:00+02:00",
       "duration": "PT1H25M",
       "eventStatus": "https://schema.org/EventScheduled",
+      "additionalType": "https://exemple.fr/referentiel/esthetiques/theatre-musical",
+      "genre": "Théâtre musical",
       "location": {
         "@type": "Place",
         "@id": "https://exemple.fr/lieu/salle-renaud-barrault",
         "name": "Salle Renaud-Barrault"
+      },
+      "workPerformed": {
+        "@type": "CreativeWork",
+        "@id": "https://exemple.fr/oeuvre/le-ring-de-katharsy",
+        "name": "Le Ring de Katharsy"
       }
     }
   ]

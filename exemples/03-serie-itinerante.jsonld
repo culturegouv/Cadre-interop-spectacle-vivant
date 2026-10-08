@@ -7,6 +7,8 @@
   "startDate": "2027-05-20",
   "endDate": "2027-05-30",
   "eventStatus": "https://schema.org/EventScheduled",
+  "additionalType": "https://exemple.fr/referentiel/esthetiques/theatre-contemporain",
+  "genre": "Théâtre contemporain",
   "organizer": {
     "@type": "Organization",
     "@id": "https://exemple.fr/org/tpm",
@@ -24,6 +26,13 @@
       "name": "La Lettre",
       "startDate": "2027-05-20T20:00:00+02:00",
       "eventStatus": "https://schema.org/EventScheduled",
+      "additionalType": "https://exemple.fr/referentiel/esthetiques/theatre-contemporain",
+      "genre": "Théâtre contemporain",
+      "workPerformed": {
+        "@type": "CreativeWork",
+        "@id": "https://exemple.fr/oeuvre/la-lettre",
+        "name": "La Lettre"
+      },
       "location": {
         "@type": "Place",
         "@id": "https://exemple.fr/lieu/parc-montreau",
@@ -42,6 +51,13 @@
       "name": "La Lettre",
       "startDate": "2027-05-26T20:00:00+02:00",
       "eventStatus": "https://schema.org/EventScheduled",
+      "additionalType": "https://exemple.fr/referentiel/esthetiques/theatre-contemporain",
+      "genre": "Théâtre contemporain",
+      "workPerformed": {
+        "@type": "CreativeWork",
+        "@id": "https://exemple.fr/oeuvre/la-lettre",
+        "name": "La Lettre"
+      },
       "location": {
         "@type": "Place",
         "@id": "https://exemple.fr/lieu/theatre-des-roches",

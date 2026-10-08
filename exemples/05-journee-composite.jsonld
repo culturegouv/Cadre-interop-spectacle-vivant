@@ -3,10 +3,18 @@
   "@type": "EventSeries",
   "@id": "https://exemple.fr/serie/journee-decouverte-2027",
   "name": "Journée découverte, Parier sur la beauté",
-  "description": "Journée composée d'événements de natures différentes, répétition publique, rencontre et conférence.",
+  "description": "Journée composée d'événements de natures différentes, répétition publique, rencontre et conférence. Chaque sous-événement porte son propre spectacle, ce qui montre comment décrire plusieurs spectacles dans une même journée sans les accumuler sur une seule représentation.",
   "startDate": "2027-02-28",
   "endDate": "2027-02-28",
   "eventStatus": "https://schema.org/EventScheduled",
+  "additionalType": [
+    "https://exemple.fr/referentiel/esthetiques/opera",
+    "https://exemple.fr/referentiel/esthetiques/rencontre-publique"
+  ],
+  "genre": [
+    "Opéra",
+    "Rencontre publique"
+  ],
   "location": {
     "@type": "Place",
     "@id": "https://exemple.fr/lieu/opera-exemple",
@@ -24,6 +32,13 @@
       "name": "Répétition publique, Manon Lescaut",
       "startDate": "2027-02-28T09:30:00+01:00",
       "eventStatus": "https://schema.org/EventScheduled",
+      "additionalType": "https://exemple.fr/referentiel/esthetiques/opera",
+      "genre": "Opéra",
+      "workPerformed": {
+        "@type": "CreativeWork",
+        "@id": "https://exemple.fr/oeuvre/manon-lescaut",
+        "name": "Manon Lescaut"
+      },
       "location": {
         "@type": "Place",
         "@id": "https://exemple.fr/lieu/opera-exemple",
@@ -36,6 +51,13 @@
       "name": "Rencontre, Parier sur la beauté",
       "startDate": "2027-02-28T11:00:00+01:00",
       "eventStatus": "https://schema.org/EventScheduled",
+      "additionalType": "https://exemple.fr/referentiel/esthetiques/rencontre-publique",
+      "genre": "Rencontre publique",
+      "workPerformed": {
+        "@type": "CreativeWork",
+        "@id": "https://exemple.fr/oeuvre/parier-sur-la-beaute",
+        "name": "Parier sur la beauté"
+      },
       "location": {
         "@type": "Place",
         "@id": "https://exemple.fr/lieu/opera-exemple",

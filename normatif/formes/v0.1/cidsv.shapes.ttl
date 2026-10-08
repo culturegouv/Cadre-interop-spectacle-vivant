@@ -30,10 +30,34 @@ cidsv:RepresentationShape
     ] ;
 
     sh:property [
+        sh:path schema:duration ;
+        sh:maxCount 1 ;
+        sh:message "La durée ne peut pas être répétée. Une durée variable selon les dates se porte sur chaque représentation."@fr ;
+    ] ;
+
+    sh:property [
         sh:path schema:location ;
         sh:minCount 1 ; sh:maxCount 1 ;
         sh:nodeKind sh:BlankNodeOrIRI ;
         sh:message "Le lieu physique est obligatoire pour une représentation."@fr ;
+    ] ;
+
+    sh:property [
+        sh:path schema:workPerformed ;
+        sh:maxCount 1 ;
+        sh:message "Une représentation ne porte qu'un seul spectacle. Un spectacle composé de plusieurs oeuvres se décrit au niveau du spectacle, et plusieurs spectacles réunis se décrivent par un regroupement de représentations."@fr ;
+    ] ;
+
+    sh:property [
+        sh:path schema:additionalType ;
+        sh:nodeKind sh:IRI ;
+        sh:message "L'identifiant d'esthétique doit être une URI renvoyant à un référentiel."@fr ;
+    ] ;
+
+    sh:property [
+        sh:path schema:genre ;
+        sh:datatype xsd:string ;
+        sh:message "Le libellé d'esthétique est un texte. L'identifiant se porte avec additionalType."@fr ;
     ] ;
 
     sh:property [
@@ -77,6 +101,18 @@ cidsv:SerieShape
         sh:path schema:location ;
         sh:maxCount 1 ;
         sh:message "Une série itinérante n'a pas de lieu unique. La propriété est facultative et ne peut pas être répétée."@fr ;
+    ] ;
+
+    sh:property [
+        sh:path schema:additionalType ;
+        sh:nodeKind sh:IRI ;
+        sh:message "L'identifiant d'esthétique doit être une URI renvoyant à un référentiel."@fr ;
+    ] ;
+
+    sh:property [
+        sh:path schema:genre ;
+        sh:datatype xsd:string ;
+        sh:message "Le libellé d'esthétique est un texte. L'identifiant se porte avec additionalType."@fr ;
     ] ;
 
     sh:property [
