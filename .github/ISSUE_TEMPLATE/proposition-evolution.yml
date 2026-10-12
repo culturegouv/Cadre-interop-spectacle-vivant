@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Une évolution du modèle se discute avant de s'écrire. Merci d'ouvrir
+        Une évolution du modèle se discute avant tout changement. Merci d'ouvrir
         cette proposition avant toute modification du code.
   - type: textarea
     id: besoin
@@ -18,7 +18,7 @@ body:
     id: cas-usage
     attributes:
       label: Cas d'usage
-      description: Un exemple réel et situé. Une proposition sans cas d'usage ne peut pas être instruite
+      description: Un exemple réel et situé ou uncas d'usage réel qui illustre le besoin métier
     validations:
       required: true
   - type: input

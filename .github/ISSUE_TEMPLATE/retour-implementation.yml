@@ -5,9 +5,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        C'est la contribution la plus utile que vous puissiez apporter. Elle
-        confronte le cadre à des données réelles plutôt qu'à des exemples
-        fabriqués.
+        Il s’agit de la contribution la plus utile que vous puissiez apporter,
+        dans la mesure où elle permet d’évaluer le cadre à partir de données réelles et de cas d’usage concrets,
+         plutôt que sur la base d’exemples construits à des fins de validation.
   - type: input
     id: origine
     attributes:
