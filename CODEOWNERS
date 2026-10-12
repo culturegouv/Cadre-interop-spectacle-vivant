@@ -2,10 +2,10 @@
 # Remplacer les identifiants ci-dessous par les comptes réels.
 
 # Toute modification du normatif requiert une relecture
-/normatif/        @a-definir-ministere @a-definir-tmnlab
+/normatif/        @ALJMC64 @Hanah-Ramezani
 
 # Les règles de validation requièrent une relecture technique
 /normatif/formes/ @a-definir-technique
 
 # La documentation
-/docs/            @a-definir-tmnlab
+/docs/            @Hanah-Ramezani

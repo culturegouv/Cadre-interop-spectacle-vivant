@@ -3,9 +3,20 @@
   "@type": "EventSeries",
   "@id": "https://exemple.fr/serie/festival-2027",
   "name": "Festival des Musiques Vivantes 2027",
+  "description": "Festival pluridisciplinaire. Cet exemple illustre la répétition de l'esthétique sur un regroupement, chaque identifiant ayant son libellé.",
   "startDate": "2027-08-26",
   "endDate": "2027-08-30",
   "eventStatus": "https://schema.org/EventScheduled",
+  "additionalType": [
+    "https://exemple.fr/referentiel/esthetiques/musiques-actuelles",
+    "https://exemple.fr/referentiel/esthetiques/musique-contemporaine",
+    "https://exemple.fr/referentiel/esthetiques/arts-de-la-rue"
+  ],
+  "genre": [
+    "Musiques actuelles",
+    "Musique contemporaine",
+    "Arts de la rue"
+  ],
   "location": {
     "@type": "Place",
     "@id": "https://exemple.fr/lieu/domaine-national",
@@ -28,6 +39,8 @@
       "startDate": "2027-08-26T18:00:00+02:00",
       "endDate": "2027-08-26T20:00:00+02:00",
       "eventStatus": "https://schema.org/EventScheduled",
+      "additionalType": "https://exemple.fr/referentiel/esthetiques/musiques-actuelles",
+      "genre": "Musiques actuelles",
       "location": {
         "@type": "Place",
         "@id": "https://exemple.fr/lieu/domaine-national-scene-principale",

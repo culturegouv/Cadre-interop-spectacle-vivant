@@ -10,6 +10,8 @@
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "inLanguage": "fr",
   "url": "https://exemple.fr/event/pelleas-et-melisande",
+  "additionalType": "https://exemple.fr/referentiel/esthetiques/opera",
+  "genre": "Opéra",
   "location": {
     "@type": "Place",
     "@id": "https://www.wikidata.org/wiki/Q975422",

@@ -23,20 +23,66 @@
     "description": { "type": "string" },
     "location": { "type": ["object", "array"] },
     "organizer": { "type": ["object", "array"] },
-    "workPerformed": { "type": ["object", "array"] },
     "performer": { "type": ["object", "array"] },
     "offers": { "type": ["object", "array"] },
+    "audience": { "type": ["object", "array"] },
+    "image": { "type": ["string", "array"] },
     "subEvent": { "type": ["object", "array"] },
-    "superEvent": { "type": ["object", "array"] }
+    "superEvent": { "type": ["object", "array"] },
+    "workPerformed": { "type": ["object", "array"] },
+    "additionalType": {
+      "description": "Identifiant de l'esthétique, URI renvoyant au référentiel des esthétiques. Répétable.",
+      "oneOf": [
+        { "type": "string", "format": "uri" },
+        {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" },
+          "minItems": 1
+        }
+      ]
+    },
+    "genre": {
+      "description": "Libellé lisible de l'esthétique. Répétable. L'identifiant correspondant se porte avec additionalType.",
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1
+        }
+      ]
+    }
   },
   "allOf": [
     {
-      "if": { "properties": { "@type": { "const": "PerformingArtsEvent" } } },
-      "then": { "required": ["startDate", "location", "eventStatus"] }
+      "if": {
+        "properties": { "@type": { "const": "PerformingArtsEvent" } },
+        "required": ["@type"]
+      },
+      "then": {
+        "required": ["startDate", "location", "eventStatus"],
+        "properties": {
+          "workPerformed": {
+            "description": "Une représentation ne porte qu'un seul spectacle. Un spectacle composé de plusieurs oeuvres se décrit au niveau du spectacle. Plusieurs spectacles dans une même soirée se décrivent par un regroupement de représentations.",
+            "type": "object"
+          }
+        }
+      }
     },
     {
-      "if": { "properties": { "@type": { "const": "EventSeries" } } },
-      "then": { "required": ["startDate", "eventStatus"] }
+      "if": {
+        "properties": { "@type": { "const": "EventSeries" } },
+        "required": ["@type"]
+      },
+      "then": {
+        "required": ["startDate", "eventStatus"],
+        "properties": {
+          "workPerformed": {
+            "description": "Un regroupement peut réunir plusieurs spectacles.",
+            "type": ["object", "array"]
+          }
+        }
+      }
     }
   ]
 }

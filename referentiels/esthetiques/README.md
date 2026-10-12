@@ -9,7 +9,7 @@ celles des dispositifs déclaratifs, celles des réseaux, celles du secteur
 touristique et celles des éditeurs de billetterie. Elles ne coïncident pas, et
 c'est précisément ce qui fait le sujet.
 
-## Le point dur
+## Le pont de vigilence 
 
 Les formes hybrides. La plupart des nomenclatures forcent un choix unique là où
 la réalité du spectacle vivant est multiple. Une nomenclature qui ne permet pas

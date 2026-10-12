@@ -13,3 +13,12 @@ seulement les données.
 | `01-sans-identifiant.jsonld` | L'identifiant de la ressource | Une représentation doit porter un identifiant pérenne |
 | `02-sans-statut.jsonld` | Le statut de l'événement | Le statut de l'événement est obligatoire |
 | `03-serie-deux-lieux.jsonld` | Deux lieux sur une même série | La propriété ne peut pas être répétée |
+| `04-representation-deux-spectacles.jsonld` | Deux spectacles sur une même représentation | Une représentation ne porte qu'un seul spectacle |
+
+## Lancer la vérification
+
+    python3 outils/valider.py --attendu-invalide exemples/invalides/*.jsonld
+
+Le validateur renvoie un code de sortie nul si, et seulement si, chacun de ces
+fichiers est effectivement rejeté. Un fichier qui passerait la validation
+signalerait que la règle correspondante est inactive.

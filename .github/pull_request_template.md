@@ -1,4 +1,4 @@
-## Ce que cette proposition change
+## Qu'est-ce que cela change ?
 
 ## Signalement lié
 

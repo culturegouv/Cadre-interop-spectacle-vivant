@@ -18,7 +18,7 @@ y contribuer est bienvenu.
 
 ## Version en cours
 
-**0.1**, périmètre des événements.
+**0.2**, périmètre des événements.
 
 Le volet production et les référentiels font l'objet des versions suivantes.
 Voir le [journal des modifications](CHANGELOG.md) et la

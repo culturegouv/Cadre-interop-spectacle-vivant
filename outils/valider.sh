@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Valide un ou plusieurs fichiers JSON-LD contre les règles du cadre.
+# Celui-ci valide un ou plusieurs fichiers JSON-LD contre les règles du cadre.
 #
 # Usage
 #   ./outils/valider.sh exemples/01-representation-opera.jsonld
