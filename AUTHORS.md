@@ -27,6 +27,8 @@ Les relectures de la couche technique sont consignées ici, avec leur date.
 | Date | Relecteur | Portée |
 | --- | --- | --- |
 | Octobre 2026 | Clarisse Bardiot | Modèle de données, niveaux de description, esthétique, cardinalités |
+| Octobre 2026 | Thomas Chenevier | Structures JSON-LD, propriétés |
+
 
 Les suites données à chaque relecture figurent dans
 [CHANGELOG.md](CHANGELOG.md).
