@@ -13,11 +13,6 @@ Une soixantaine de professionnels ont contribué à cette première version. La
 liste nominative figure en annexe du document publié et sera reportée ici lors
 de la prochaine mise à jour.
 
-Parmi les contributions au modèle de données, la contribution de Clarisse
-Bardiot, professeure des universités, dont les travaux sur la documentation des
-arts de la scène et le modèle LAPA ont alimenté la distinction entre l'œuvre
-scénique et sa réalisation.
-
 Pour être ajouté ou corrigé dans cette liste, ouvrez un signalement.
 
 ## Relectures
