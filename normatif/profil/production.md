@@ -1,4 +1,4 @@
-# Spectacle
+# Production
 
 > Ce niveau n'existe pas dans le cadre publié en juin 2026. Ce fichier est une
 > proposition pour la version suivante. Rien ici n'est validé, aucune règle de
