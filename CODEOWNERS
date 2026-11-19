@@ -1,11 +1,17 @@
 # Relecteurs requis avant fusion.
-# Remplacer les identifiants ci-dessous par les comptes réels.
 
-# Toute modification du normatif requiert une relecture
-/normatif/        @ALJMC64 @Hanah-Ramezani
 
-# Les règles de validation requièrent une relecture technique
-/normatif/formes/ @a-definir-technique
+# Autorité par défaut sur l'ensemble du dépôt
+* @Hanah-Ramezani @ALJMC64
+
+
+# Le normatif est relu à deux
+/normatif/ @Hanah-Ramezani @ALJMC64
+
+
+# Les règles de validation
+/normatif/formes/ @Hanah-Ramezani
+
 
 # La documentation
-/docs/            @Hanah-Ramezani
+/docs/ @Hanah-Ramezani
