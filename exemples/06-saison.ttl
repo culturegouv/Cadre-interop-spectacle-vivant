@@ -1,0 +1,928 @@
+@prefix exif: <http://www.w3.org/2003/12/exif/ns#> .
+@prefix md: <https://spec.commonmark.org/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.exemple.fr/api/documents/10755> a schema:MediaObject,
+        schema:Thing,
+        schema:VideoObject ;
+    schema:contentUrl "https://www.exemple.fr/medias/7d88e3a8"^^xsd:anyURI ;
+    schema:copyrightNotice "Texte générique." ;
+    schema:creditText "Texte générique." ;
+    schema:name "Média 1"@en,
+        "Média 1"@fr .
+
+<https://api.exemple.fr/api/documents/47151> a schema:MediaObject,
+        schema:SoundObject,
+        schema:Thing ;
+    schema:contentUrl "https://www.exemple.fr/medias/e0f321fa"^^xsd:anyURI ;
+    schema:copyrightNotice "Texte générique." ;
+    schema:creditText "Texte générique." ;
+    schema:description "Texte générique."^^md: ;
+    schema:name "Média 1"@en,
+        "Média 1"@fr .
+
+<https://api.exemple.fr/api/event_dates/4785> a schema:Event,
+        schema:PerformingArtsEvent,
+        schema:Thing ;
+    schema:author <https://api.exemple.fr/api/roles/13633> ;
+    schema:dateModified "2026-10-04T15:55:16+00:00"^^xsd:dateTime ;
+    schema:duration "PT2H20M"^^xsd:duration ;
+    schema:endDate "2026-10-04T16:20:00+00:00"^^xsd:dateTime ;
+    schema:eventAttendanceMode schema:OfflineEventAttendanceMode ;
+    schema:eventStatus schema:EventScheduled ;
+    schema:location <https://api.exemple.fr/api/places/10> ;
+    schema:name "L'Amour des trois oranges" ;
+    schema:performer <https://api.exemple.fr/api/roles/13703> ;
+    schema:sdDatePublished "2026-05-12T09:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:sponsor <https://api.exemple.fr/api/roles/14672> ;
+    schema:startDate "2026-10-04T14:00:00+00:00"^^xsd:dateTime ;
+    schema:superEvent <https://api.exemple.fr/api/seasons/31> ;
+    schema:workPerformed <https://api.exemple.fr/api/events/3626> .
+
+<https://api.exemple.fr/api/event_dates/4865> a schema:Event,
+        schema:PerformingArtsEvent,
+        schema:Thing ;
+    schema:dateModified "2026-11-26T07:35:19+00:00"^^xsd:dateTime ;
+    schema:duration "PT1H"^^xsd:duration ;
+    schema:endDate "2027-04-22T19:00:00+00:00"^^xsd:dateTime ;
+    schema:eventAttendanceMode schema:OfflineEventAttendanceMode ;
+    schema:eventStatus schema:EventScheduled ;
+    schema:location <https://api.exemple.fr/api/places/64> ;
+    schema:name "Une heure, un concert" ;
+    schema:offers <https://api.exemple.fr/api/event_dates/4865/offer> ;
+    schema:performer <https://api.exemple.fr/api/roles/14587> ;
+    schema:sdDatePublished "2026-05-12T09:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:startDate "2027-04-22T18:00:00+00:00"^^xsd:dateTime ;
+    schema:superEvent <https://api.exemple.fr/api/seasons/31> ;
+    schema:workPerformed <https://api.exemple.fr/api/events/3651> .
+
+<https://api.exemple.fr/api/event_dates/5014> a schema:EducationEvent,
+        schema:Event,
+        schema:Thing ;
+    schema:dateModified "2026-07-07T15:26:32+00:00"^^xsd:dateTime ;
+    schema:duration "PT55M"^^xsd:duration ;
+    schema:endDate "2026-11-03T14:25:00+00:00"^^xsd:dateTime ;
+    schema:eventAttendanceMode schema:OfflineEventAttendanceMode ;
+    schema:eventStatus schema:EventScheduled ;
+    schema:location <https://api.exemple.fr/api/places/8> ;
+    schema:name "Le Roi des ours" ;
+    schema:sdDatePublished "2026-05-27T09:45:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:startDate "2026-11-03T13:30:00+00:00"^^xsd:dateTime ;
+    schema:superEvent <https://api.exemple.fr/api/seasons/31> ;
+    schema:workPerformed <https://api.exemple.fr/api/events/3706> .
+
+<https://api.exemple.fr/api/event_dates/5041> a schema:EducationEvent,
+        schema:Event,
+        schema:Thing ;
+    schema:dateModified "2026-07-10T15:23:37+00:00"^^xsd:dateTime ;
+    schema:duration "PT1H10M"^^xsd:duration ;
+    schema:endDate "2027-01-12T14:40:00+00:00"^^xsd:dateTime ;
+    schema:eventAttendanceMode schema:OfflineEventAttendanceMode ;
+    schema:eventStatus schema:EventScheduled ;
+    schema:location <https://api.exemple.fr/api/places/8> ;
+    schema:name "L’Histoire du soldat" ;
+    schema:offers <https://api.exemple.fr/api/event_dates/5041/offer> ;
+    schema:performer <https://api.exemple.fr/api/roles/14179> ;
+    schema:sdDatePublished "2026-05-27T09:45:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:startDate "2027-01-12T13:30:00+00:00"^^xsd:dateTime ;
+    schema:superEvent <https://api.exemple.fr/api/seasons/31> ;
+    schema:workPerformed <https://api.exemple.fr/api/events/3709> .
+
+<https://api.exemple.fr/api/event_dates/5071> a schema:EducationEvent,
+        schema:Event,
+        schema:Thing ;
+    schema:dateModified "2026-07-07T15:22:26+00:00"^^xsd:dateTime ;
+    schema:duration "PT1H"^^xsd:duration ;
+    schema:endDate "2027-04-27T13:30:00+00:00"^^xsd:dateTime ;
+    schema:eventAttendanceMode schema:OfflineEventAttendanceMode ;
+    schema:eventStatus schema:EventScheduled ;
+    schema:location <https://api.exemple.fr/api/places/8> ;
+    schema:name "La Lampe d'après Aladdin" ;
+    schema:offers <https://api.exemple.fr/api/event_dates/5071/offer> ;
+    schema:sdDatePublished "2026-05-27T10:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:startDate "2027-04-27T12:30:00+00:00"^^xsd:dateTime ;
+    schema:superEvent <https://api.exemple.fr/api/seasons/31> ;
+    schema:workPerformed <https://api.exemple.fr/api/events/3718> .
+
+<https://api.exemple.fr/api/places/4/postal_address> a schema:PostalAddress,
+        schema:Thing ;
+    schema:addressLocality "Villexemple" ;
+    schema:streetAddress "2 rue de l'Exemple" .
+
+<https://api.exemple.fr/api/documents/17583> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1152 ;
+    exif:width 894 ;
+    schema:contentUrl "https://api.exemple.fr/assets/6b7f7738.jpg"^^xsd:anyURI ;
+    schema:image "https://api.exemple.fr/assets/6b7f7738.jpg"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/documents/24280> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1000 ;
+    exif:width 664 ;
+    schema:contentUrl "https://api.exemple.fr/assets/6b626a71.jpg"^^xsd:anyURI ;
+    schema:copyrightNotice "Texte générique." ;
+    schema:creditText "Texte générique." ;
+    schema:image "https://api.exemple.fr/assets/6b626a71.jpg"^^xsd:anyURI ;
+    schema:name "Média 2" .
+
+<https://api.exemple.fr/api/documents/29412> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 314 ;
+    exif:width 1920 ;
+    schema:contentUrl "https://api.exemple.fr/assets/d8da7513.png"^^xsd:anyURI ;
+    schema:image "https://api.exemple.fr/assets/d8da7513.png"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/documents/40428> a schema:MediaObject,
+        schema:Thing,
+        schema:VideoObject ;
+    schema:contentUrl "https://www.exemple.fr/medias/b76a5668"^^xsd:anyURI ;
+    schema:copyrightNotice "Texte générique." ;
+    schema:creditText "Texte générique." ;
+    schema:name "Média 2" .
+
+<https://api.exemple.fr/api/documents/45343> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1284 ;
+    exif:width 1920 ;
+    schema:contentUrl "https://api.exemple.fr/assets/39e7889a.jpg"^^xsd:anyURI ;
+    schema:image "https://api.exemple.fr/assets/39e7889a.jpg"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/documents/45408> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1284 ;
+    exif:width 1920 ;
+    schema:contentUrl "https://api.exemple.fr/assets/e954a6e9.jpg"^^xsd:anyURI ;
+    schema:image "https://api.exemple.fr/assets/e954a6e9.jpg"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/documents/45463> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1284 ;
+    exif:width 1920 ;
+    schema:contentUrl "https://api.exemple.fr/assets/e177dc64.jpg"^^xsd:anyURI ;
+    schema:copyrightNotice "Texte générique." ;
+    schema:creditText "Texte générique." ;
+    schema:image "https://api.exemple.fr/assets/e177dc64.jpg"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/documents/45595> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1272 ;
+    exif:width 1140 ;
+    schema:contentUrl "https://api.exemple.fr/assets/23ed3574.jpg"^^xsd:anyURI ;
+    schema:copyrightNotice "Texte générique." ;
+    schema:creditText "Texte générique." ;
+    schema:image "https://api.exemple.fr/assets/23ed3574.jpg"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/documents/45598> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1272 ;
+    exif:width 1140 ;
+    schema:contentUrl "https://api.exemple.fr/assets/0a29b425.jpg"^^xsd:anyURI ;
+    schema:copyrightNotice "Texte générique." ;
+    schema:creditText "Texte générique." ;
+    schema:image "https://api.exemple.fr/assets/0a29b425.jpg"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/documents/45838> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1284 ;
+    exif:width 1920 ;
+    schema:contentUrl "https://api.exemple.fr/assets/8a82858d.jpg"^^xsd:anyURI ;
+    schema:image "https://api.exemple.fr/assets/8a82858d.jpg"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/documents/46007> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1472 ;
+    exif:width 1160 ;
+    schema:contentUrl "https://api.exemple.fr/assets/53174046.jpg"^^xsd:anyURI ;
+    schema:image "https://api.exemple.fr/assets/53174046.jpg"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/documents/46010> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1472 ;
+    exif:width 1160 ;
+    schema:contentUrl "https://api.exemple.fr/assets/d6f4d0dc.jpg"^^xsd:anyURI ;
+    schema:image "https://api.exemple.fr/assets/d6f4d0dc.jpg"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/documents/46118> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1472 ;
+    exif:width 1160 ;
+    schema:contentUrl "https://api.exemple.fr/assets/b4337c45.jpg"^^xsd:anyURI ;
+    schema:image "https://api.exemple.fr/assets/b4337c45.jpg"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/documents/46296> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1280 ;
+    exif:width 1920 ;
+    schema:contentUrl "https://api.exemple.fr/assets/bfe43500.jpg"^^xsd:anyURI ;
+    schema:image "https://api.exemple.fr/assets/bfe43500.jpg"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/documents/46389> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1152 ;
+    exif:width 894 ;
+    schema:contentUrl "https://api.exemple.fr/assets/37f971b5.jpg"^^xsd:anyURI ;
+    schema:image "https://api.exemple.fr/assets/37f971b5.jpg"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/documents/47727> a schema:ImageObject,
+        schema:MediaObject,
+        schema:Thing ;
+    exif:height 1280 ;
+    exif:width 1920 ;
+    schema:contentUrl "https://api.exemple.fr/assets/41bc810d.jpg"^^xsd:anyURI ;
+    schema:image "https://api.exemple.fr/assets/41bc810d.jpg"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/event_dates/4808> a schema:Event,
+        schema:PerformingArtsEvent,
+        schema:Thing ;
+    schema:author <https://api.exemple.fr/api/roles/13785> ;
+    schema:dateModified "2026-11-26T07:35:19+00:00"^^xsd:dateTime ;
+    schema:duration "PT1H45M"^^xsd:duration ;
+    schema:endDate "2027-03-19T20:45:00+00:00"^^xsd:dateTime ;
+    schema:eventAttendanceMode schema:OfflineEventAttendanceMode ;
+    schema:eventStatus schema:EventScheduled ;
+    schema:location <https://api.exemple.fr/api/places/10> ;
+    schema:name "Salomé" ;
+    schema:offers <https://api.exemple.fr/api/event_dates/4808/offer> ;
+    schema:performer <https://api.exemple.fr/api/roles/13791> ;
+    schema:sdDatePublished "2026-05-12T09:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:sponsor <https://api.exemple.fr/api/roles/14764> ;
+    schema:startDate "2027-03-19T19:00:00+00:00"^^xsd:dateTime ;
+    schema:superEvent <https://api.exemple.fr/api/events/3746/series>,
+        <https://api.exemple.fr/api/seasons/31> ;
+    schema:workPerformed <https://api.exemple.fr/api/events/3629> .
+
+<https://api.exemple.fr/api/event_dates/4808/offer> a schema:AggregateOffer ;
+    schema:availability schema:InStock ;
+    schema:highPrice 125 ;
+    schema:lowPrice 10 ;
+    schema:offerCount 3 ;
+    schema:priceCurrency "EUR" ;
+    schema:url <https://billetterie.exemple.fr/api/1/redirect/product/performance?id=10229724700839&lang=fr> .
+
+<https://api.exemple.fr/api/event_dates/4865/offer> a schema:AggregateOffer ;
+    schema:availability schema:InStock ;
+    schema:highPrice 26 ;
+    schema:lowPrice 10 ;
+    schema:offerCount 3 ;
+    schema:priceCurrency "EUR" ;
+    schema:url <https://billetterie.exemple.fr/api/1/redirect/product/performance?id=10229751906057&lang=fr> .
+
+<https://api.exemple.fr/api/event_dates/5041/offer> a schema:AggregateOffer ;
+    schema:availability schema:SoldOut .
+
+<https://api.exemple.fr/api/event_dates/5071/offer> a schema:AggregateOffer ;
+    schema:availability schema:SoldOut .
+
+<https://api.exemple.fr/api/event_dates/5106> a schema:Event,
+        schema:PerformingArtsEvent,
+        schema:Thing ;
+    schema:dateModified "2026-11-15T20:50:27+00:00"^^xsd:dateTime ;
+    schema:duration "PT3H"^^xsd:duration ;
+    schema:endDate "2026-11-15T22:00:00+00:00"^^xsd:dateTime ;
+    schema:eventAttendanceMode schema:OfflineEventAttendanceMode ;
+    schema:eventStatus schema:EventScheduled ;
+    schema:location <https://api.exemple.fr/api/places/8> ;
+    schema:name "Discobole Orchestra invite Eden Rousseau + DJ sets" ;
+    schema:sdDatePublished "2026-06-03T10:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:startDate "2026-11-15T19:00:00+00:00"^^xsd:dateTime ;
+    schema:superEvent <https://api.exemple.fr/api/events/3777/series>,
+        <https://api.exemple.fr/api/seasons/31> ;
+    schema:workPerformed <https://api.exemple.fr/api/events/3730> .
+
+<https://api.exemple.fr/api/event_dates/5269> a schema:Event,
+        schema:PerformingArtsEvent,
+        schema:Thing ;
+    schema:dateModified "2026-09-29T15:35:58+00:00"^^xsd:dateTime ;
+    schema:duration "P0D"^^xsd:duration ;
+    schema:endDate "2026-11-11T17:30:00+00:00"^^xsd:dateTime ;
+    schema:eventAttendanceMode schema:OfflineEventAttendanceMode ;
+    schema:eventStatus schema:EventScheduled ;
+    schema:location <https://api.exemple.fr/api/places/8> ;
+    schema:name "Mini-concert conférencé : Le maloya, par Noa Moreau et Lou Bernard" ;
+    schema:sdDatePublished "2026-06-03T10:12:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:startDate "2026-11-11T17:30:00+00:00"^^xsd:dateTime ;
+    schema:superEvent <https://api.exemple.fr/api/events/3777/series>,
+        <https://api.exemple.fr/api/seasons/31> ;
+    schema:workPerformed <https://api.exemple.fr/api/events/3789> .
+
+<https://api.exemple.fr/api/events/3746/series> a schema:Event,
+        schema:EventSeries,
+        schema:Thing ;
+    schema:duration "P2M10DT23H59M59S"^^xsd:duration ;
+    schema:endDate "2027-04-05T21:59:59+00:00"^^xsd:dateTime ;
+    schema:eventStatus schema:EventScheduled ;
+    schema:name "Festival Donner de la voix" ;
+    schema:startDate "2027-01-25T23:00:00+00:00"^^xsd:dateTime ;
+    schema:subEvent <https://api.exemple.fr/api/event_dates/4808> ;
+    schema:workPerformed <https://api.exemple.fr/api/events/3746> .
+
+<https://api.exemple.fr/api/people/367> a schema:Person,
+        schema:Thing ;
+    schema:dateModified "2018-04-13T09:37:22+00:00"^^xsd:dateTime ;
+    schema:familyName "Durand" ;
+    schema:name "Claude Durand" ;
+    schema:sdDatePublished "2018-04-13T09:37:22+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> .
+
+<https://api.exemple.fr/api/places/10/geo> a schema:GeoCoordinates ;
+    schema:latitude "46.0"^^xsd:float ;
+    schema:longitude "2.0"^^xsd:float .
+
+<https://api.exemple.fr/api/places/10/postal_address> a schema:PostalAddress,
+        schema:Thing ;
+    schema:addressLocality "Villexemple" ;
+    schema:postalCode "99000" ;
+    schema:streetAddress "1 rue de l'Exemple" .
+
+<https://api.exemple.fr/api/places/64> a schema:Place,
+        schema:Thing ;
+    schema:dateModified "2026-07-03T09:11:13+00:00"^^xsd:dateTime ;
+    schema:geo <https://api.exemple.fr/api/places/64/geo> ;
+    schema:name "Salle Exemple 2" ;
+    schema:sdDatePublished "2026-07-03T09:11:13+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> .
+
+<https://api.exemple.fr/api/places/64/geo> a schema:GeoCoordinates ;
+    schema:latitude "46.001"^^xsd:float ;
+    schema:longitude "2.001"^^xsd:float .
+
+<https://api.exemple.fr/api/places/8/geo> a schema:GeoCoordinates ;
+    schema:latitude "46.002"^^xsd:float ;
+    schema:longitude "2.002"^^xsd:float .
+
+<https://api.exemple.fr/api/roles/13703> a schema:Role ;
+    schema:performer <https://api.exemple.fr/api/people/284> ;
+    schema:roleName "Le Roi de trèfle" .
+
+<https://api.exemple.fr/api/roles/13791> a schema:Role ;
+    schema:performer <https://api.exemple.fr/api/people/875> ;
+    schema:roleName "Hérodiade" .
+
+<https://api.exemple.fr/api/roles/13937> a schema:Role ;
+    schema:author <https://api.exemple.fr/api/people/1242> ;
+    schema:roleName "Musique" .
+
+<https://api.exemple.fr/api/roles/14179> a schema:Role ;
+    schema:performer <https://api.exemple.fr/api/people/1> ;
+    schema:roleName "Violon" .
+
+<https://api.exemple.fr/api/roles/14524> a schema:Role ;
+    schema:sponsor <https://api.exemple.fr/api/organizations/55> .
+
+<https://api.exemple.fr/api/roles/14587> a schema:Role ;
+    schema:performer <https://api.exemple.fr/api/people/367> ;
+    schema:roleName "Piano" .
+
+<https://www.exemple.fr/en/artists/alex-garnier> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/people/1242> ;
+    schema:url "https://www.exemple.fr/en/artists/alex-garnier"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/artists/camille-martin> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/people/1> ;
+    schema:url "https://www.exemple.fr/en/artists/camille-martin"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/artists/charlie-blanc> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/people/877> ;
+    schema:url "https://www.exemple.fr/en/artists/charlie-blanc"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/artists/dominique-lefevre> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/people/1216> ;
+    schema:url "https://www.exemple.fr/en/artists/dominique-lefevre"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/artists/morgan-laurent> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/people/875> ;
+    schema:url "https://www.exemple.fr/en/artists/morgan-laurent"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/artists/sacha-chevalier> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/people/284> ;
+    schema:url "https://www.exemple.fr/en/artists/sacha-chevalier"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/programme/saison-2026-2027/concert/one-hour-one-concert-nikolai-rimski-korsakov> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/events/3651> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/concert/one-hour-one-concert-nikolai-rimski-korsakov"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/programme/saison-2026-2027/concert/the-music-hating-king> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/events/3649> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/concert/the-music-hating-king"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/programme/saison-2026-2027/conference/grand-entretien-18> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/events/3680> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/conference/grand-entretien-18"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/programme/saison-2026-2027/ecoles/la-lampe-dapres-aladdin> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/events/3718> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/ecoles/la-lampe-dapres-aladdin"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/programme/saison-2026-2027/ecoles/le-roi-des-ours> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/events/3706> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/ecoles/le-roi-des-ours"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/programme/saison-2026-2027/ecoles/lhistoire-du-soldat-1> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/events/3709> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/ecoles/lhistoire-du-soldat-1"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/programme/saison-2026-2027/opera-underground/discobole-orchestra-invite-eden-rousseau-dj-sets> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/events/3730> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/opera-underground/discobole-orchestra-invite-eden-rousseau-dj-sets"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/programme/saison-2026-2027/opera-underground/le-maloya-en-plein-coeur-et-au-dela> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/events/3777> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/opera-underground/le-maloya-en-plein-coeur-et-au-dela"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/programme/saison-2026-2027/opera-underground/mini-concert-conference-le-maloya-par-noa-moreau-et-lou-bernard> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/events/3789> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/opera-underground/mini-concert-conference-le-maloya-par-noa-moreau-et-lou-bernard"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/programme/saison-2026-2027/opera/festival-donner-de-la-voix> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/events/3746> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/opera/festival-donner-de-la-voix"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/programme/saison-2026-2027/opera/salome> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/events/3629> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/opera/salome"^^xsd:anyURI .
+
+<https://www.exemple.fr/en/programme/saison-2026-2027/opera/the-love-for-three-oranges> a schema:WebPage ;
+    schema:inLanguage "en" ;
+    schema:mainEntity <https://api.exemple.fr/api/events/3626> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/opera/the-love-for-three-oranges"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/events/3777/series> a schema:Event,
+        schema:EventSeries,
+        schema:Thing ;
+    schema:duration "P5DT23H59M59S"^^xsd:duration ;
+    schema:endDate "2026-11-15T22:59:59+00:00"^^xsd:dateTime ;
+    schema:eventStatus schema:EventScheduled ;
+    schema:name "Le maloya, en plein cœur et au-delà" ;
+    schema:startDate "2026-11-09T23:00:00+00:00"^^xsd:dateTime ;
+    schema:subEvent <https://api.exemple.fr/api/event_dates/5106>,
+        <https://api.exemple.fr/api/event_dates/5269> ;
+    schema:workPerformed <https://api.exemple.fr/api/events/3777> .
+
+<https://api.exemple.fr/api/people/1> a schema:Person,
+        schema:Thing ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/24280> ;
+    schema:biography "Texte générique."^^md: ;
+    schema:dateModified "2022-04-27T08:08:57+00:00"^^xsd:dateTime ;
+    schema:description "Texte générique."^^md: ;
+    schema:familyName "Martin" ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/artists/camille-martin> ;
+    schema:name "Camille Martin" ;
+    schema:sdDatePublished "2022-04-27T08:08:57+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:url "https://www.exemple.fr/en/artists/camille-martin"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/artistes/camille-martin"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/people/1216> a schema:Person,
+        schema:Thing ;
+    schema:biography "Texte générique."^^md: ;
+    schema:dateModified "2026-06-23T10:11:27+00:00"^^xsd:dateTime ;
+    schema:description "Texte générique."^^md: ;
+    schema:familyName "Lefèvre" ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/artists/dominique-lefevre> ;
+    schema:name "Dominique Lefèvre" ;
+    schema:sdDatePublished "2026-06-23T10:11:27+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:url "https://www.exemple.fr/en/artists/dominique-lefevre"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/artistes/dominique-lefevre"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/people/1242> a schema:Person,
+        schema:Thing ;
+    schema:biography "Texte générique."^^md: ;
+    schema:dateModified "2026-11-23T08:10:04+00:00"^^xsd:dateTime ;
+    schema:description "Texte générique."^^md: ;
+    schema:familyName "Garnier" ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/artists/alex-garnier> ;
+    schema:name "Alex Garnier" ;
+    schema:sdDatePublished "2026-11-23T08:10:04+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:url "https://www.exemple.fr/en/artists/alex-garnier"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/artistes/alex-garnier"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/people/284> a schema:Person,
+        schema:Thing ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/46389> ;
+    schema:biography "Texte générique."^^md: ;
+    schema:dateModified "2026-06-23T10:17:04+00:00"^^xsd:dateTime ;
+    schema:description "Texte générique."^^md: ;
+    schema:familyName "Chevalier" ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/artists/sacha-chevalier> ;
+    schema:name "Sacha Chevalier" ;
+    schema:sdDatePublished "2026-06-23T10:17:04+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:url "https://www.exemple.fr/en/artists/sacha-chevalier"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/artistes/sacha-chevalier"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/people/875> a schema:Person,
+        schema:Thing ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/17583> ;
+    schema:biography "Texte générique."^^md: ;
+    schema:dateModified "2023-09-20T14:32:31+00:00"^^xsd:dateTime ;
+    schema:description "Texte générique."^^md: ;
+    schema:familyName "Laurent" ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/artists/morgan-laurent> ;
+    schema:name "Morgan Laurent" ;
+    schema:sdDatePublished "2023-09-20T14:32:31+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:url "https://www.exemple.fr/en/artists/morgan-laurent"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/artistes/morgan-laurent"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/people/877> a schema:Person,
+        schema:Thing ;
+    schema:biography "Texte générique."^^md: ;
+    schema:dateModified "2023-11-20T09:45:31+00:00"^^xsd:dateTime ;
+    schema:description "Texte générique."^^md: ;
+    schema:familyName "Blanc" ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/artists/charlie-blanc> ;
+    schema:name "Charlie Blanc" ;
+    schema:sdDatePublished "2023-11-20T09:45:31+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:url "https://www.exemple.fr/en/artists/charlie-blanc"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/artistes/charlie-blanc"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/places/10> a schema:Place,
+        schema:Thing ;
+    schema:address <https://api.exemple.fr/api/places/10/postal_address> ;
+    schema:dateModified "2026-07-03T08:49:11+00:00"^^xsd:dateTime ;
+    schema:geo <https://api.exemple.fr/api/places/10/geo> ;
+    schema:name "Salle Exemple 1" ;
+    schema:sdDatePublished "2026-07-03T08:49:11+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> .
+
+<https://api.exemple.fr/api/roles/13633> a schema:Role ;
+    schema:author <https://api.exemple.fr/api/people/1216> ;
+    schema:roleName "Direction musicale" .
+
+<https://api.exemple.fr/api/roles/13785> a schema:Role ;
+    schema:author <https://api.exemple.fr/api/people/877> ;
+    schema:roleName "Direction musicale" .
+
+<https://api.exemple.fr/api/roles/14672> a schema:Role ;
+    schema:sponsor <https://api.exemple.fr/api/organizations/55> .
+
+<https://api.exemple.fr/api/roles/14764> a schema:Role ;
+    schema:sponsor <https://api.exemple.fr/api/organizations/55> .
+
+<https://api.exemple.fr/api/tags/106> a schema:DefinedTerm,
+        schema:Thing ;
+    schema:name "Families"@en,
+        "En famille"@fr ;
+    schema:subjectOf <https://api.exemple.fr/api/events/3649>,
+        <https://api.exemple.fr/api/events/3651> .
+
+<https://api.exemple.fr/api/tags/107> a schema:DefinedTerm,
+        schema:Thing ;
+    schema:name "Talk"@en,
+        "Conférence"@fr ;
+    schema:subjectOf <https://api.exemple.fr/api/events/3680>,
+        <https://api.exemple.fr/api/events/3777> .
+
+<https://api.exemple.fr/api/tags/112> a schema:DefinedTerm,
+        schema:Thing ;
+    schema:name "Festival" ;
+    schema:subjectOf <https://api.exemple.fr/api/events/3629>,
+        <https://api.exemple.fr/api/events/3746> .
+
+<https://api.exemple.fr/api/tags/174> a schema:DefinedTerm,
+        schema:Thing ;
+    schema:name "Teenagers"@en,
+        "Pour les ados"@fr ;
+    schema:subjectOf <https://api.exemple.fr/api/events/3626>,
+        <https://api.exemple.fr/api/events/3651> .
+
+<https://api.exemple.fr/api/events/3680> a schema:CreativeWork,
+        schema:Thing ;
+    schema:about <https://api.exemple.fr/api/tags/107> ;
+    schema:alternativeHeadline "L'Amour des trois oranges : rencontre avec Sacha Durand, metteur en scène" ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/46296> ;
+    schema:creditText "Texte générique."^^md: ;
+    schema:dateModified "2026-11-26T07:32:21+00:00"^^xsd:dateTime ;
+    schema:datePublished "2026-08-25T10:00:00+00:00"^^xsd:dateTime ;
+    schema:disambiguatingDescription "Texte générique."^^md: ;
+    schema:image "https://api.exemple.fr/assets/bfe43500.jpg"^^xsd:anyURI ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/programme/saison-2026-2027/conference/grand-entretien-18> ;
+    schema:name "Grand Entretien" ;
+    schema:sdDatePublished "2026-08-25T10:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/conference/grand-entretien-18"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/programmation/saison-2026-2027/conference/grand-entretien-18"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/organizations/55> a schema:Organization,
+        schema:Thing ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/29412> ;
+    schema:dateModified "2024-04-16T09:42:45+00:00"^^xsd:dateTime ;
+    schema:name "Mécène Exemple 1" ;
+    schema:sdDatePublished "2024-04-16T09:42:45+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> .
+
+<https://api.exemple.fr/api/tags/63> a schema:DefinedTerm,
+        schema:Thing ;
+    schema:name "Écoles" ;
+    schema:subjectOf <https://api.exemple.fr/api/events/3706>,
+        <https://api.exemple.fr/api/events/3709>,
+        <https://api.exemple.fr/api/events/3718> .
+
+<https://api.exemple.fr/api/events/3626> a schema:CreativeWork,
+        schema:Thing ;
+    schema:about <https://api.exemple.fr/api/tags/174> ;
+    schema:alternativeHeadline "Opéra Exemple Orchestra and Chorus"@en,
+        "Orchestre et Chœurs de l'Opéra Exemple"@fr ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/45408> ;
+    schema:author <https://api.exemple.fr/api/roles/13633> ;
+    schema:creditText "Generic text."@en,
+        "Texte générique."@fr ;
+    schema:dateModified "2026-11-26T07:32:20+00:00"^^xsd:dateTime ;
+    schema:datePublished "2026-05-12T09:00:00+00:00"^^xsd:dateTime ;
+    schema:description "Generic text."@en,
+        "Texte générique."@fr ;
+    schema:disambiguatingDescription "Generic text."@en,
+        "Texte générique."@fr ;
+    schema:image "https://api.exemple.fr/assets/e954a6e9.jpg"^^xsd:anyURI ;
+    schema:inLanguage "En français surtitré en français" ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/programme/saison-2026-2027/opera/the-love-for-three-oranges> ;
+    schema:name "The Love for Three Oranges"@en,
+        "L'Amour des trois oranges"@fr ;
+    schema:sdDatePublished "2026-05-12T09:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:sponsor <https://api.exemple.fr/api/roles/14672> ;
+    schema:typicalAgeRange "10 and up"@en,
+        "Dès 10 ans"@fr ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/opera/the-love-for-three-oranges"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/programmation/saison-2026-2027/opera/lamour-des-trois-oranges"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/events/3629> a schema:CreativeWork,
+        schema:Thing ;
+    schema:about <https://api.exemple.fr/api/tags/112> ;
+    schema:alternativeHeadline "Opéra Exemple Orchestra"@en,
+        "Orchestre de l'Opéra Exemple"@fr ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/45463> ;
+    schema:author <https://api.exemple.fr/api/roles/13785> ;
+    schema:creditText "Generic text."@en,
+        "Texte générique."@fr ;
+    schema:dateModified "2026-11-26T07:36:24+00:00"^^xsd:dateTime ;
+    schema:datePublished "2026-05-12T09:00:00+00:00"^^xsd:dateTime ;
+    schema:description "Generic text."@en,
+        "Texte générique."@fr ;
+    schema:disambiguatingDescription "Generic text."@en,
+        "Texte générique."@fr ;
+    schema:image "https://api.exemple.fr/assets/e177dc64.jpg"^^xsd:anyURI ;
+    schema:inLanguage "En allemand surtitré en français" ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/programme/saison-2026-2027/opera/salome> ;
+    schema:name "Salome"@en,
+        "Salomé"@fr ;
+    schema:sdDatePublished "2026-05-12T09:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:sponsor <https://api.exemple.fr/api/roles/14764> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/opera/salome"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/programmation/saison-2026-2027/opera/salome"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/events/3649> a schema:CreativeWork,
+        schema:Thing ;
+    schema:about <https://api.exemple.fr/api/tags/106>,
+        <https://api.exemple.fr/api/tags/4> ;
+    schema:alternativeHeadline "The King In Love"@en,
+        "Le Roi qui aimait Joséphine"@fr ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/45343> ;
+    schema:author <https://api.exemple.fr/api/roles/13937> ;
+    schema:dateModified "2026-11-26T07:32:21+00:00"^^xsd:dateTime ;
+    schema:datePublished "2026-05-12T09:00:00+00:00"^^xsd:dateTime ;
+    schema:description "Generic text."@en,
+        "Texte générique."@fr ;
+    schema:disambiguatingDescription "Generic text."@en,
+        "Texte générique."@fr ;
+    schema:image "https://api.exemple.fr/assets/39e7889a.jpg"^^xsd:anyURI ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/programme/saison-2026-2027/concert/the-music-hating-king> ;
+    schema:name "The Music-Hating King"@en,
+        "Le Roi qui n’aimait pas la musique"@fr ;
+    schema:sdDatePublished "2026-05-12T09:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:typicalAgeRange "5 and up"@en,
+        "Dès 5 ans"@fr ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/concert/the-music-hating-king"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/programmation/saison-2026-2027/concert/le-roi-qui-naimait-pas-la-musique"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/events/3706> a schema:CreativeWork,
+        schema:Thing ;
+    schema:about <https://api.exemple.fr/api/tags/63> ;
+    schema:alternativeHeadline "Ensemble TACTUS" ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/45595> ;
+    schema:creditText "Texte générique."^^md: ;
+    schema:dateModified "2026-11-26T07:32:22+00:00"^^xsd:dateTime ;
+    schema:datePublished "2026-05-27T09:45:00+00:00"^^xsd:dateTime ;
+    schema:description "Texte générique."^^md: ;
+    schema:disambiguatingDescription "Texte générique."^^md: ;
+    schema:image "https://api.exemple.fr/assets/23ed3574.jpg"^^xsd:anyURI ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/programme/saison-2026-2027/ecoles/le-roi-des-ours> ;
+    schema:name "Le Roi des ours" ;
+    schema:sdDatePublished "2026-05-27T09:45:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/ecoles/le-roi-des-ours"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/programmation/saison-2026-2027/ecoles/le-roi-des-ours"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/events/3709> a schema:CreativeWork,
+        schema:Thing ;
+    schema:about <https://api.exemple.fr/api/tags/63> ;
+    schema:alternativeHeadline "Musiciennes et musiciens de l’Orchestre de l’Opéra Exemple" ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/45598> ;
+    schema:dateModified "2026-11-26T07:32:22+00:00"^^xsd:dateTime ;
+    schema:datePublished "2026-05-27T09:45:00+00:00"^^xsd:dateTime ;
+    schema:description "Texte générique."^^md: ;
+    schema:disambiguatingDescription "Texte générique."^^md: ;
+    schema:image "https://api.exemple.fr/assets/0a29b425.jpg"^^xsd:anyURI ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/programme/saison-2026-2027/ecoles/lhistoire-du-soldat-1> ;
+    schema:name "L’Histoire du soldat" ;
+    schema:sdDatePublished "2026-05-27T09:45:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/ecoles/lhistoire-du-soldat-1"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/programmation/saison-2026-2027/ecoles/lhistoire-du-soldat-1"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/events/3718> a schema:CreativeWork,
+        schema:Thing ;
+    schema:about <https://api.exemple.fr/api/tags/63> ;
+    schema:alternativeHeadline "Collectif Ubique" ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/40428> ;
+    schema:dateModified "2026-11-26T07:32:22+00:00"^^xsd:dateTime ;
+    schema:datePublished "2026-05-27T10:00:00+00:00"^^xsd:dateTime ;
+    schema:description "Texte générique."^^md: ;
+    schema:disambiguatingDescription "Texte générique."^^md: ;
+    schema:image "https://api.exemple.fr/assets/3c72160c.jpg"^^xsd:anyURI ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/programme/saison-2026-2027/ecoles/la-lampe-dapres-aladdin> ;
+    schema:name "La Lampe d'après Aladdin" ;
+    schema:sdDatePublished "2026-05-27T10:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/ecoles/la-lampe-dapres-aladdin"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/programmation/saison-2026-2027/ecoles/la-lampe-dapres-aladdin"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/events/3730> a schema:CreativeWork,
+        schema:Thing ;
+    schema:about <https://api.exemple.fr/api/tags/4> ;
+    schema:alternativeHeadline "Grande fête maloya à 360°" ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/46010> ;
+    schema:dateModified "2026-11-26T07:32:22+00:00"^^xsd:dateTime ;
+    schema:datePublished "2026-06-03T10:00:00+00:00"^^xsd:dateTime ;
+    schema:description "Texte générique."^^md: ;
+    schema:disambiguatingDescription "Texte générique."^^md: ;
+    schema:image "https://api.exemple.fr/assets/d6f4d0dc.jpg"^^xsd:anyURI ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/programme/saison-2026-2027/opera-underground/discobole-orchestra-invite-eden-rousseau-dj-sets> ;
+    schema:name "Discobole Orchestra invite Eden Rousseau + DJ sets" ;
+    schema:sdDatePublished "2026-06-03T10:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/opera-underground/discobole-orchestra-invite-eden-rousseau-dj-sets"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/programmation/saison-2026-2027/opera-underground/discobole-orchestra-invite-eden-rousseau-dj-sets"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/events/3746> a schema:CreativeWork,
+        schema:Thing ;
+    schema:about <https://api.exemple.fr/api/tags/112> ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/45838> ;
+    schema:dateModified "2026-11-26T07:32:23+00:00"^^xsd:dateTime ;
+    schema:datePublished "2026-05-12T09:00:00+00:00"^^xsd:dateTime ;
+    schema:description "Texte générique."^^md: ;
+    schema:disambiguatingDescription "Texte générique."^^md: ;
+    schema:image "https://api.exemple.fr/assets/8a82858d.jpg"^^xsd:anyURI ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/programme/saison-2026-2027/opera/festival-donner-de-la-voix> ;
+    schema:name "Festival Donner de la voix" ;
+    schema:sdDatePublished "2026-05-12T09:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:sponsor <https://api.exemple.fr/api/roles/14524> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/opera/festival-donner-de-la-voix"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/programmation/saison-2026-2027/opera/festival-donner-de-la-voix"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/events/3789> a schema:CreativeWork,
+        schema:Thing ;
+    schema:about <https://api.exemple.fr/api/tags/4> ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/46007> ;
+    schema:dateModified "2026-11-26T07:32:23+00:00"^^xsd:dateTime ;
+    schema:datePublished "2026-06-03T10:12:00+00:00"^^xsd:dateTime ;
+    schema:description "Texte générique."^^md: ;
+    schema:disambiguatingDescription "Texte générique."^^md: ;
+    schema:image "https://api.exemple.fr/assets/53174046.jpg"^^xsd:anyURI ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/programme/saison-2026-2027/opera-underground/mini-concert-conference-le-maloya-par-noa-moreau-et-lou-bernard> ;
+    schema:name "Mini-concert conférencé : Le maloya, par Noa Moreau et Lou Bernard" ;
+    schema:sdDatePublished "2026-06-03T10:12:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/opera-underground/mini-concert-conference-le-maloya-par-noa-moreau-et-lou-bernard"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/programmation/saison-2026-2027/opera-underground/mini-concert-conference-le-maloya-par-noa-moreau-et-lou-bernard"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/events/3777> a schema:CreativeWork,
+        schema:Thing ;
+    schema:about <https://api.exemple.fr/api/tags/107>,
+        <https://api.exemple.fr/api/tags/4> ;
+    schema:alternativeHeadline "Une semaine avec la Compagnie Discobole" ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/46118> ;
+    schema:dateModified "2026-11-26T07:32:23+00:00"^^xsd:dateTime ;
+    schema:datePublished "2026-06-03T09:00:00+00:00"^^xsd:dateTime ;
+    schema:description "Texte générique."^^md: ;
+    schema:disambiguatingDescription "Texte générique."^^md: ;
+    schema:image "https://api.exemple.fr/assets/b4337c45.jpg"^^xsd:anyURI ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/programme/saison-2026-2027/opera-underground/le-maloya-en-plein-coeur-et-au-dela> ;
+    schema:name "Le maloya, en plein cœur et au-delà" ;
+    schema:sdDatePublished "2026-06-03T09:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/opera-underground/le-maloya-en-plein-coeur-et-au-dela"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/programmation/saison-2026-2027/opera-underground/le-maloya-en-plein-coeur-et-au-dela"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/places/8> a schema:Place,
+        schema:Thing ;
+    schema:dateModified "2026-07-03T09:44:42+00:00"^^xsd:dateTime ;
+    schema:geo <https://api.exemple.fr/api/places/8/geo> ;
+    schema:name "Salle Exemple 3" ;
+    schema:sdDatePublished "2026-07-03T09:44:42+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> .
+
+<https://api.exemple.fr/api/tags/4> a schema:DefinedTerm,
+        schema:Thing ;
+    schema:name "Concert" ;
+    schema:subjectOf <https://api.exemple.fr/api/events/3649>,
+        <https://api.exemple.fr/api/events/3651>,
+        <https://api.exemple.fr/api/events/3730>,
+        <https://api.exemple.fr/api/events/3777>,
+        <https://api.exemple.fr/api/events/3789> .
+
+<https://api.exemple.fr/api/events/3651> a schema:CreativeWork,
+        schema:Thing ;
+    schema:about <https://api.exemple.fr/api/tags/106>,
+        <https://api.exemple.fr/api/tags/174>,
+        <https://api.exemple.fr/api/tags/4> ;
+    schema:alternativeHeadline "Around Nikolaï Rimski-Korsakov"@en,
+        "Autour de Nikolaï Rimski-Korsakov"@fr ;
+    schema:associatedMedia <https://api.exemple.fr/api/documents/47727> ;
+    schema:dateModified "2026-11-26T07:32:21+00:00"^^xsd:dateTime ;
+    schema:datePublished "2026-05-12T09:00:00+00:00"^^xsd:dateTime ;
+    schema:description "Generic text."@en,
+        "Texte générique."@fr ;
+    schema:disambiguatingDescription "Generic text."@en,
+        "Texte générique."@fr ;
+    schema:image "https://api.exemple.fr/assets/48c9814a.jpg"^^xsd:anyURI ;
+    schema:mainEntityOfPage <https://www.exemple.fr/en/programme/saison-2026-2027/concert/one-hour-one-concert-nikolai-rimski-korsakov> ;
+    schema:name "One hour, one concert"@en,
+        "Une heure, un concert"@fr ;
+    schema:sdDatePublished "2026-05-12T09:00:00+00:00"^^xsd:dateTime ;
+    schema:sdPublisher <https://www.exemple.fr#organization> ;
+    schema:typicalAgeRange "8 and up"@en,
+        "Dès 8 ans"@fr ;
+    schema:url "https://www.exemple.fr/en/programme/saison-2026-2027/concert/one-hour-one-concert-nikolai-rimski-korsakov"^^xsd:anyURI,
+        "https://www.exemple.fr/fr/programmation/saison-2026-2027/concert/une-heure-un-concert-nokolai-rimski-korsakov"^^xsd:anyURI .
+
+<https://api.exemple.fr/api/seasons/31> a schema:EventSeries,
+        schema:Thing ;
+    schema:endDate "2027-08-30T22:00:00+00:00"^^xsd:dateTime ;
+    schema:eventStatus schema:EventScheduled ;
+    schema:name "Saison 2026-2027" ;
+    schema:startDate "2026-07-26T22:00:00+00:00"^^xsd:dateTime ;
+    schema:workPerformed <https://api.exemple.fr/api/events/3626>,
+        <https://api.exemple.fr/api/events/3629>,
+        <https://api.exemple.fr/api/events/3649>,
+        <https://api.exemple.fr/api/events/3651>,
+        <https://api.exemple.fr/api/events/3680>,
+        <https://api.exemple.fr/api/events/3706>,
+        <https://api.exemple.fr/api/events/3709>,
+        <https://api.exemple.fr/api/events/3718>,
+        <https://api.exemple.fr/api/events/3730>,
+        <https://api.exemple.fr/api/events/3746>,
+        <https://api.exemple.fr/api/events/3777>,
+        <https://api.exemple.fr/api/events/3789> .
+
+<https://www.exemple.fr#organization> a schema:Organization,
+        schema:Thing ;
+    schema:name "Opéra Exemple" .
+
