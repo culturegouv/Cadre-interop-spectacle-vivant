@@ -53,6 +53,12 @@ docker compose run --rm valider exemples/*.jsonld
 docker compose run --rm valider --attendu-invalide exemples/invalides/*.jsonld
 ```
 
+Pour valider un fichier situé hors du dépôt, montez-le dans `/donnees` :
+
+```bash
+docker compose run --rm -v ~/Téléchargements/saison.ttl:/donnees/saison.ttl:ro valider /donnees/saison.ttl
+```
+
 ## Fondements
 
 Le cadre s'appuie sur le vocabulaire [schema.org](https://schema.org), et
