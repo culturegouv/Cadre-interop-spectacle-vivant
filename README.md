@@ -59,6 +59,13 @@ Pour valider un fichier situé hors du dépôt, montez-le dans `/donnees` :
 docker compose run --rm -v ~/Téléchargements/saison.ttl:/donnees/saison.ttl:ro valider /donnees/saison.ttl
 ```
 
+Pour tout un dossier, mettez le motif entre guillemets : il est alors développé
+dans le conteneur et non par votre shell.
+
+```bash
+docker compose run --rm -v ~/Téléchargements/exports:/donnees:ro valider '/donnees/*.ttl'
+```
+
 ## Fondements
 
 Le cadre s'appuie sur le vocabulaire [schema.org](https://schema.org), et

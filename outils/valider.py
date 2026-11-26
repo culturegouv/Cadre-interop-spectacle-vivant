@@ -14,6 +14,7 @@ Usage
     python3 outils/valider.py --attendu-invalide exemples/invalides/*.jsonld
 """
 
+import glob
 import json
 import pathlib
 import sys
@@ -43,7 +44,9 @@ def graphe_depuis(fichier, contexte):
 
 def main(args):
     attendu_invalide = "--attendu-invalide" in args
-    fichiers = [a for a in args if not a.startswith("--")]
+    # Motifs entre guillemets développés ici, utile pour un dossier monté dans Docker
+    fichiers = [f for a in args if not a.startswith("--")
+                for f in (sorted(glob.glob(a)) or [a])]
 
     if not fichiers:
         print(__doc__)
@@ -60,6 +63,10 @@ def main(args):
             donnees = graphe_depuis(fichier, contexte)
         except json.JSONDecodeError as erreur:
             print(f"    ECHEC  JSON invalide, {erreur}")
+            echecs += 1
+            continue
+        except FileNotFoundError:
+            print("    ECHEC  fichier introuvable")
             echecs += 1
             continue
         except Exception as erreur:  # rdflib lève aussi IndexError sur un Turtle tronqué
