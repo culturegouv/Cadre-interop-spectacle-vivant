@@ -46,6 +46,13 @@ pip install -r outils/requirements.txt
 ./outils/valider.sh exemples/01-representation-opera.jsonld
 ```
 
+Ou sans installer Python, avec Docker :
+
+```bash
+docker compose run --rm valider exemples/*.jsonld
+docker compose run --rm valider --attendu-invalide exemples/invalides/*.jsonld
+```
+
 ## Fondements
 
 Le cadre s'appuie sur le vocabulaire [schema.org](https://schema.org), et
