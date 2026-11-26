@@ -26,7 +26,7 @@ jobs:
           done
 
       - name: Les exemples valides doivent passer
-        run: python3 outils/valider.py exemples/*.jsonld
+        run: python3 outils/valider.py exemples/*.jsonld exemples/*.ttl
 
       - name: Les exemples invalides doivent échouer
         run: python3 outils/valider.py --attendu-invalide exemples/invalides/*.jsonld
