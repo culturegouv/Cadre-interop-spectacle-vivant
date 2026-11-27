@@ -70,6 +70,12 @@ signalements ouverts sur le dépôt.
 
 - Couche exécutable du cadre, à l'état de proposition technique non validée.
   Contexte JSON-LD, exemples valides, règles de validation et validateur.
+- Validation des fichiers Turtle (`.ttl`), en plus du JSON-LD. Un fichier dont
+  aucun nœud n'est ciblé par les règles est rejeté, ce qui signale notamment
+  l'usage de `http://schema.org/` à la place de `https://schema.org/`.
+- Exemple `06-saison.ttl`, extrait pseudonymisé d'un export réel de saison.
+- Exécution du validateur avec Docker, sans installer Python :
+  `docker compose run --rm valider exemples/*.jsonld`.
 
 ## [0.1] - 2026-06-04
 

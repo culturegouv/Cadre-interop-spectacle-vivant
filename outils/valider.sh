@@ -16,6 +16,7 @@ fi
 
 echo "==> Vérification de la syntaxe JSON"
 for fichier in "$@"; do
+  [[ "${fichier}" == *.ttl ]] && continue
   if python3 -m json.tool "${fichier}" > /dev/null; then
     echo "    ok  ${fichier}"
   else
