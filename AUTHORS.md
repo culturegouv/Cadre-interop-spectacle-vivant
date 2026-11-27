@@ -16,6 +16,7 @@ de la prochaine mise à jour.
 Pour être ajouté ou corrigé dans cette liste, ouvrez un signalement.
 
 - Nicolas Chauvat (Logilab)
+- Ambroise Maupate (Rezo Zero)
 
 ## Relectures
 
